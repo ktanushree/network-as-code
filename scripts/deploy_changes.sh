@@ -21,7 +21,7 @@ git config --global user.name "travis-worker-cloudgenix" 2>&1 | indent
 # Remove existing "origin"
 git remote rm origin 2>&1 | indent
 # Add new "origin" with access token in the git URL for authentication
-git remote add origin "https://travis-worker-cloudgenix:${GITHUB_REPO_TOKEN}@github.com/CloudGenix/network-as-code.git" > /dev/null 2>&1
+git remote add origin "https://travis-worker-cloudgenix:${GITHUB_REPO_TOKEN}@github.com/ktanushree/network-as-code.git" > /dev/null 2>&1
 
 ## DEBUG - find out why things arent working
 #git remote get-url --all origin
