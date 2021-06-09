@@ -4,6 +4,11 @@ cache: pip
 os: linux
 dist: xenial
 
+env:
+  - AUTH_TOKEN="145bdfa51d3a550d48928c39346543db504893cd-pa.u.exp=9223372036854775807&pa.p.id=password&t.id=1236&s.id=2&pa.u.id=tkamath%40paloaltonetworks.com&o.id=14998952434280192&region=elcapitan&client_ip=199.167.52.5&session_key=AA3f2hgEO1pGeK2BfyoXPCFuyjSJ7VQ4esE9sHRqY9nCcn64yOjpDsZsn315BVu2sdX4rZfyTftoZMgyQTyxWOuoPuBkq35wvDD96utntHVjFUg6tAwZtmMqARr7qsgG7Kfp6IjfljCvFRJ4L9g7ozzgF8ohirRuIO9YdPRq8WymqofqeMjh6pf7wlmzvj5zPlOyhJpn"
+  - GITHUB_REPO_TOKEN="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"
+  - CI="travis"
+
 branches:
   only:
   - master  # This will be whatever branch we want to be the "production" branch.
