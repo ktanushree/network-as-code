@@ -47,7 +47,7 @@ echo "${MODIFIED_CONFIGS}" 2>&1 | indent
 # create tmp logs
 mkdir -p /tmp/logs
 
-echo "Using auth for cgx config: ${AUTH_TOKEN}"
+echo "auth for cgx config: ${AUTH_TOKEN}"
 for SITE_CONFIG in ${MODIFIED_CONFIGS}
   do
     SITE_CONFIG_FILE=$(basename "${SITE_CONFIG}")
