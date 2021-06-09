@@ -53,7 +53,7 @@ for SITE_CONFIG in ${MODIFIED_CONFIGS}
     SITE_CONFIG_FILE=$(basename "${SITE_CONFIG}")
     echo -e -n "${WHITE}Executing ${SITE_CONFIG_FILE} Configuration: ${NC}"
     # Do the actual site config operations.
-    if do_site "${SITE_CONFIG}" > "/tmp/logs/${SITE_CONFIG_FILE}.log" 2>&1
+    if do_site "${SITE_CONFIG}" -D 2> "/tmp/logs/${SITE_CONFIG_FILE}.log" 2>&1
       then
         echo -e "${GREEN}Success. ${NC}"
       else
