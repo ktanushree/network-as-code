@@ -1,9 +1,9 @@
 [![CloudGenix Logo](https://raw.githubusercontent.com/CloudGenix/network-as-code/master/scripts/images/CloudGenix_Logo.png)](https://www.cloudgenix.com)
 
 [![Build Status](https://travis-ci.com/CloudGenix/network-as-code.svg?branch=master)](https://travis-ci.com/CloudGenix/network-as-code)
-[![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/pulls)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CloudGenix/network-as-code?color=brightgreen)](https://github.com/CloudGenix/network-as-code/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed)
-[![GitHub issues open](https://img.shields.io/github/issues/CloudGenix/network-as-code.svg)](https://github.com/CloudGenix/network-as-code/issues)
+[![GitHub open pull requests](https://img.shields.io/github/issues-pr-raw/CloudGenix/network-as-code.svg)](https://github.com/ktanushree/network-as-code/pulls)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/CloudGenix/network-as-code?color=brightgreen)](https://github.com/ktanushree/network-as-code/pulls?utf8=%E2%9C%93&q=is%3Apr+is%3Aclosed)
+[![GitHub issues open](https://img.shields.io/github/issues/CloudGenix/network-as-code.svg)](https://github.com/ktanushree/network-as-code/issues)
 ![GitHub License (MIT)](https://img.shields.io/github/license/CloudGenix/network-as-code?color=brightgreen)
 # CloudGenix Network as Code Demo Environment
 Demo of a CloudGenix Network as Code Environment
@@ -35,13 +35,13 @@ Where is the source of truth that defines a network?
   
 ### Tools Used
  - CloudGenix AppFabric SD-WAN Network - <https://www.cloudgenix.com>
- - CloudGenix Config CI/CD Utility - <https://github.com/CloudGenix/cloudgenix_config>
+ - CloudGenix Config CI/CD Utility - <https://github.com/ktanushree/cloudgenix_config>
  - GitHub - <https://github.com>
  - Travis-ci - <https://travis-ci.com>
 
 ### Participate!
 This demo isn't just for show. You too can make changes! To participate, do the following:
-1. On your GitHub account, fork this repository. You've now got a copy of this repository you can change and edit! [![GitHub forks](https://img.shields.io/github/forks/CloudGenix/network-as-code?style=social)](https://github.com/CloudGenix/network-as-code/fork)
+1. On your GitHub account, fork this repository. You've now got a copy of this repository you can change and edit! [![GitHub forks](https://img.shields.io/github/forks/CloudGenix/network-as-code?style=social)](https://github.com/ktanushree/network-as-code/fork)
 2. In the `configurations` directory, make some changes to one or more of the *.yml config files. You can do this right in GitHub by clicking "Edit File."
 3. Commit your changes, give your commit a descriptive name. If using a local GIT repo, you need to push your commit back to your GitHub Fork.
 4. Create a PULL request from your repository (and branch) to `CloudGenix/network-as-code:master`.  
@@ -50,7 +50,7 @@ This demo isn't just for show. You too can make changes! To participate, do the 
 
 To see your changes:
 * Take a look at the [Build Logs](https://travis-ci.com/CloudGenix/network-as-code) 
-* Or, see the [UI screenshots in the `results` branch](https://github.com/CloudGenix/network-as-code/tree/results/screenshots)!
+* Or, see the [UI screenshots in the `results` branch](https://github.com/ktanushree/network-as-code/tree/results/screenshots)!
 
 For this demo, we'll attempt take most changes (within reason.) Even if stuff breaks, we can easily roll back.
 For best/quickest results, here are the easiest changes to approve:

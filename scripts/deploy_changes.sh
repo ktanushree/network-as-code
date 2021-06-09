@@ -21,7 +21,7 @@ git config --global user.name "travis-worker-cloudgenix" 2>&1 | indent
 # Remove existing "origin"
 git remote rm origin 2>&1 | indent
 # Add new "origin" with access token in the git URL for authentication
-git remote add origin "https://travis-worker-cloudgenix:${GITHUB_REPO_TOKEN}@github.com/CloudGenix/network-as-code.git" > /dev/null 2>&1
+git remote add origin "https://travis-worker-cloudgenix:${GITHUB_REPO_TOKEN}@github.com/ktanushree/network-as-code.git" > /dev/null 2>&1
 
 ## DEBUG - find out why things arent working
 #git remote get-url --all origin
@@ -47,12 +47,16 @@ echo "${MODIFIED_CONFIGS}" 2>&1 | indent
 # create tmp logs
 mkdir -p /tmp/logs
 
+echo "Using auth for cgx config: ${AUTH_TOKEN}"
 for SITE_CONFIG in ${MODIFIED_CONFIGS}
   do
     SITE_CONFIG_FILE=$(basename "${SITE_CONFIG}")
     echo -e -n "${WHITE}Executing ${SITE_CONFIG_FILE} Configuration: ${NC}"
+    echo "${SITE_CONFIG_FILE}"
+    echo "do_site "${SITE_CONFIG}""
+
     # Do the actual site config operations.
-    if do_site "${SITE_CONFIG}" > "/tmp/logs/${SITE_CONFIG_FILE}.log" 2>&1
+    if do_site "${SITE_CONFIG_FILE}" > "/tmp/logs/${SITE_CONFIG_FILE}.log" 2>&1
       then
         echo -e "${GREEN}Success. ${NC}"
       else
